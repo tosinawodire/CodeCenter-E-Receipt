@@ -1,0 +1,32 @@
+<%- include('partials/header')%>
+
+<div class="course-list">
+    <h3>Registered Courses
+        
+    </h3>
+
+    <table border="0" class="tab">
+
+        <tr>
+            <th>Course-ID</th> <th>Course Description</th> <th>Price</th> <th>Duration</th>
+
+        </tr>
+             <% results.forEach(function(result){ %>
+        <tr>
+            <td> <%= result.course_setup_id %></td> 
+            <td> <%= result.course_name%></td> 
+            <td> <%= result.price %></td> 
+            <td> <%= result.duration %></td> 
+          
+
+
+        </tr>
+            <% }) %>
+</table>
+
+    
+
+</div>
+
+
+<%- include('partials/footer')%>

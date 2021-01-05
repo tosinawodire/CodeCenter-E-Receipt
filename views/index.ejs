@@ -1,0 +1,27 @@
+<%- include('partials/header')%>
+
+<div class="student-form">
+
+    <h3>Student Registration</h3>
+  
+
+    <form action="/studentreg" method="POST">
+      
+        <p class="label">Firstname</p>  <p><input type="text" name="firstname" id="" required></p>
+        <p class="label">Lastname</p> <p><input type="text" name="lastname" id="" required></p>
+        <p class="label">Phone Number</p> <p> <input type="text" name="phone" id="" required></p>
+        <p class="label">Email</p> <p> <input type="email" name="email" id="" required></p>
+        <p class="label">Date of birth</p> <p> <input type="date" name="dob" id="" required></p>
+        <p class="label">Gender</p> 
+        <p class="label">Male <input type="radio" name="gender" value="male" rstrrequired>
+           Female <input type="radio" name ="gender"  value="female" required>
+        </p>
+
+        <input type="submit" value="Click to Register">
+
+
+    </form>
+
+</div>
+
+<%- include('partials/footer')%>
